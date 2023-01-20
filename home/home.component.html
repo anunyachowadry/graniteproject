@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <mat-icon (click) ='sidebar.toggle()' style="color:rgb(250, 248, 248);"><i class="fa fa-bars"></i></mat-icon>  
+      <img src="assets/Logo1.jpg" class="img">
+      </mat-toolbar-row>
+   
+    
+</mat-toolbar>
+
+<mat-sidenav #sidebar mode='side' opened>
+  <div class="sidebar">
+
+  <div class="home">HOME</div>
+    <div class="home" routerLink="product">Products &nbsp;&nbsp;&nbsp;<i class="fa fa-angle-down"></i></div>
+
+    <div class="home" routerLink="raw">Orders</div>
+    <div class="home" routerLink="raw">Order History</div>
+    <div class="home" routerLink="raw">Production Management</div>
+    <div class="home">Invoices</div>
+  </div>
+</mat-sidenav>
